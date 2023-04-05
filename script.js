@@ -11,24 +11,28 @@ console.log(c);
 console.log(d);
 console.log(a+b+c+d);
 
-let totalsum = document.querySelector('.basket__total_sum');
-
+const totalsum = document.querySelector('.basket__total_sum');
 totalsum.innerHTML = a + b + c + d;
-console.log(totalsum);
+
+let coupon = 20;
+const totaltotal = document.querySelector('.basket__total_total');
+let couponbutton = document.querySelector('button');
+let totaltotalsum = (totalsum.innerHTML * (100-20)) / 100;
+let saleSum = document.querySelector('.saleSum')
 
 
-// let totaltotal = () => {(totalsum / 100) * 20};
-// totaltotal = Number(totaltotal);
-// console.log(totaltotal);
-// Button.onclick = function(){totaltotal}
+function makeClick(){
+console.log('coupon used!');
+totaltotal.innerHTML  = totaltotalsum;
+saleSum.innerHTML = 'Итого со скидкой:';
+console.log(totaltotal.innerHTML);
+}
 
-// let totaltotal = document.querySelector('.basket__total_total');
-// totaltotal.innerHTML = baskettotal(x) => {
-// let x = totalsum;
-// result = totalsum / 100 * 20;
-// return (result);
-// console.log(result);
-// };
+couponbutton.addEventListener('click', makeClick); 
+
+
+
+
 
 
 

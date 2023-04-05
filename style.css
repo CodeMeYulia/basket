@@ -1,42 +1,34 @@
 .basket__container{
-    border: 1px dashed black;
-    /* background-color: cornflowerblue; */
-    border-radius: 5%;
+    max-width: 900px;
+    min-height: 900px;
+    background-color: rgb(189, 208, 243);
+    border-radius: 35px;
     display: flex;
     flex-direction: column;
 }
 
-.basket__items-block{
-/* display: grid;
-grid-template-columns: 0.3fr 1fr 0.3fr; */
-}
-
 .basket__title{
-    border: 1px dashed blue;
+    /* border: 1px dashed blue; */
     margin: 0 165px;
-}
-
-.basket__items-block{
-    border: 1px dashed green;
+    text-align: center;
 }
 
 .basket__item_description{
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     margin: 0 40px;
 }
 
 .basket__item{
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     align-items: center;
     display: grid;
-grid-template-columns: 0.1fr 1fr 0.2fr;
+    grid-template-columns: 0.1fr 1fr 0.3fr;
 }
 
 .basket__item_img{
-    border: 1px dashed blue;
-width: 90px;
-height: 130px;
-margin-left: 30px;
+    width: 90px;
+    height: 130px;
+    margin-left: 30px;
 }
 
 img{
@@ -44,22 +36,26 @@ img{
 }
 
 .basket__coupon{
-    border-radius: 5px;
-    background-color: black;
-    width: 200px;
+    border-radius: 15px;
+    background-color: rgb(246, 172, 13);
+    width: 150px;
     height: 60px;
-    margin: 5px;
-    color: white;
+    margin: 0 155px;
+    border-style: none;
 }
 
 .basket__item_price{
-    align-items: end;
+    align-items: right;
 }
 
 .basket__total{
-    border: 1px dashed blue;
-    margin: 0 168px;
+    /* border: 1px dashed blue; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
+    padding: 50px 130px;
+}
+
+h2{
+    font-size: 15px;
 }
